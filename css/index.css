@@ -1,3 +1,293 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+h1{
+	font-size: 50px;
+}
+h2{
+	font-size: 30px;
+}
+p{
+	font-size: 20px;
+	line-height: 1.25;
+}
+.top{
+	display:flex;
+	margin: 6% 0% 8% 0%;
+	justify-content: space-between;
+	align-items: center;
+}
+.fea-bout{
+	display: flex;
+	margin: 2% 0%;
+	justify-content: space-between;
+}
+.sepavi{
+	display:flex;
+	margin: 1%;
+	justify-content: space-evenly;
+}
+.middle-img{
+	width: 100%;
+	margin: 2% 0%;
+}
+.middle{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 3%;
+}
+.middle2{
+	border-bottom: 1px solid black;
+	padding: 0% 0% 3% 0%;
+}
+.state{
+	padding: 5px;
+}
+.pie{
+	width: 49%;
+}
+.mix{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 45%;
+}
+.mix h1{
+	font-size: 105px;
+	width: 75%;
+	text-align:center;
+	margin-bottom: 10%;
+}
+.button{
+	height: 40px;
+	width: 250px;
+	font-weight: bold;
+	font-size: 18px;
+}
+.duck{
+	display: flex;
+	width: 90%;
+	height: 70px;
+	align-items: center;
+	margin: 2% 0% 0% 0%;
+}
+nav {
+	display: flex;
+	justify-content: space-evenly;
+}
+nav a{
+	color: gray;
+	text-decoration: none;
+	font-size: 20px;
+}
 
 
+
+.bar{
+	width: 90%;
+}
+.con{
+	width: 20%;
+	margin: 3%;
+}
+.con p{
+	padding: 2.5%;
+}
+footer{
+	display: block;
+	text-align:center;
+}
+.services-header-img{
+	width: 100%;
+	margin: 0% 0% 6% 0%;
+}
+.six-boxes{
+	margin: 4%;
+	padding-bottom: 4%;
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+}
+.boxed{
+	width: 45%;
+	border: 1px solid rgb(112, 108, 108);
+	background-color: rgba(209, 207, 207, 0.541);
+	padding: 2%;
+	margin: 1%;
+}
+.button2{
+	height: 40px;
+	width: 150px;
+	margin: 4%;
+}
+.some{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.facts{
+	width: 40%;
+	margin: 0% 12% 0% 0%;
+}
+ul{
+	margin: 3%;
+	list-style-type: square;
+}
+li{
+	font-size: 20px;
+	padding: 1%;
+}
+@media (max-width: 800px){
+    .container{
+        width: 100%;
+    }
+    p{
+        font-size: 15px;
+    }
+    .duck{
+        flex-direction: column;
+        flex-flow: column-reverse;
+        width:100%;
+        margin: 70px 0px ;
+        padding:none;
+        align-items:center;
+    }
+    .button{
+        padding: none;
+    }
+
+    nav{
+        width: 100%;
+        margin-top: 3%;
+    }
+    nav a{
+        padding: 25px;
+    }
+    .mix1{
+        display:none;
+    }
+    .top{
+        justify-content: center;
+    }
+    .mix h1{      
+        width: 55%;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    .mix{
+        width:100%;
+    }
+    .con{
+        width:30%;
+    }
+}
+@media (max-width: 500px){
+.container{
+    width: 100%;
+    margin-top: 430px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-top: .75px solid grey;
+    border-bottom: .75px solid grey;
+    
+}
+nav a{
+    border-top: .5px solid grey;
+    border-bottom: .5px solid grey;
+
+}
+.top{
+    margin-top: none;
+}
+
+
+.pie{
+    width: 100%;
+    padding: 4% 0%;
+}
+.sepavi{
+    flex-direction: column;
+}
+.state{
+    padding: 4% 0%;
+}
+.mix h1{      
+    width: 65%;
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 82px;
+}
+}
